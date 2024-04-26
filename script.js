@@ -24,6 +24,7 @@ const changeTheme = () => {
 
 const stopChange = () => {
     clearInterval(change);
+    change = null;
 }
 
 start.addEventListener('click', changeTheme);
