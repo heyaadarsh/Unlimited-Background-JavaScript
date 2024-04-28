@@ -16,6 +16,7 @@ const start = document.querySelector('#start');
 const stop = document.querySelector('#stop')
 
 const changeTheme = () => {
+    clearInterval(change);
     change = setInterval(()=> {
         let color = colorName();
         document.body.style.backgroundColor = color;
